@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WiEaLoXBeTDbOexD6RDzFeMK5xWnu4RjHwvqEOfuNI//NkzNeYXL2RoiV+lVHf4oE2w2+jTLYfGvK9KEAS8wzA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\antonio.batista\\Documents\\projetos\\versoes\\2\\CleanArchitectureDemo\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\antonio.batista\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
