@@ -25,16 +25,8 @@ namespace CleanArchitecture.MVC.Controllers
         public ActionResult<BookRetorno> Get()
         {
             var models = _bookService.GetBooks();
-           
-            var x = 0;
-            //return model;
             return Ok(models);
         }
 
-        //public IActionResult Index()
-        //{
-        //    BookViewModel model = _bookService.GetBooks();
-        //    return View(model);
-        //}
     }
 }

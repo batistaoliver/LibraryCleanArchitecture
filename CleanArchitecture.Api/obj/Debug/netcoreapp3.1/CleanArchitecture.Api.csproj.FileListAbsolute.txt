@@ -46,3 +46,8 @@ C:\Users\antonio.batista\Documents\projetos\versoes\2\CleanArchitectureDemo\Clea
 C:\Users\antonio.batista\Documents\projetos\versoes\2\CleanArchitectureDemo\CleanArchitecture.Api\obj\Debug\netcoreapp3.1\CleanArchitecture.Api.dll
 C:\Users\antonio.batista\Documents\projetos\versoes\2\CleanArchitectureDemo\CleanArchitecture.Api\obj\Debug\netcoreapp3.1\CleanArchitecture.Api.pdb
 C:\Users\antonio.batista\Documents\projetos\versoes\2\CleanArchitectureDemo\CleanArchitecture.Api\obj\Debug\netcoreapp3.1\CleanArchitecture.Api.genruntimeconfig.cache
+C:\Users\antonio.batista\Documents\projetos\versoes\2\CleanArchitectureDemo\CleanArchitecture.Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\antonio.batista\Documents\projetos\versoes\2\CleanArchitectureDemo\CleanArchitecture.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\antonio.batista\Documents\projetos\versoes\2\CleanArchitectureDemo\CleanArchitecture.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\antonio.batista\Documents\projetos\versoes\2\CleanArchitectureDemo\CleanArchitecture.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\antonio.batista\Documents\projetos\versoes\2\CleanArchitectureDemo\CleanArchitecture.Api\obj\Debug\netcoreapp3.1\CleanArchitecture.Api.MvcApplicationPartsAssemblyInfo.cs

@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,6 +36,10 @@ namespace CleanArchitecture.Api
                     Configuration.GetConnectionString("LibraryConnection"));
             });
             RegisterServices(services);
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "API Clean Architecture Library", Version = "v1" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,7 +49,12 @@ namespace CleanArchitecture.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseSwagger();
 
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "API Model DDD");
+            });
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -55,6 +65,7 @@ namespace CleanArchitecture.Api
             {
                 endpoints.MapControllers();
             });
+           
         }
         private static void RegisterServices(IServiceCollection services)
         {
