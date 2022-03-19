@@ -16,22 +16,11 @@ namespace CleanArchitecture.Application.Services
         {
             _bookRepository = bookRepository;
         }
-        //public BookViewModel GetBooks()
-        //{
-        //    return new BookViewModel()
-        //    {
-        //        Books = _bookRepository.GetBooks()
-        //    };
-        //}
-        
+       
         public BookRetorno GetBooks()
         {
             BookRetorno _bookRetorno = new BookRetorno();
-            //{
-            //    Status = "ok",
-            //    Mensagem = "jjj",
-            //    Books = null
-            //};
+
             var bookList = new List<Book>();
             var books = _bookRepository.GetAll();
             foreach(var indice in books)
@@ -42,6 +31,24 @@ namespace CleanArchitecture.Application.Services
             _bookRetorno.Status = "ok";
             _bookRetorno.Mensagem = "ok";
             return _bookRetorno;
+        }
+        public void BookAdd(Book book)
+        {
+            _bookRepository.Add(book);
+        }
+
+        public void BookUpdate(Book book)
+        {
+            _bookRepository.Update(book);
+        }
+        public Book BookGetById(int id)
+        {
+            return _bookRepository.GetById(id);
+        }
+
+        public void BookRemove(Book book)
+        {
+            _bookRepository.Remove(book);
         }
     }
 }

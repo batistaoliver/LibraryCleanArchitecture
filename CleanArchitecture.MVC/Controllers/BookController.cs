@@ -18,14 +18,14 @@ namespace CleanArchitecture.MVC.Controllers
         }
 
         //[Authorize]
-        public IActionResult Index()
-        {
-            var model = _bookService.GetBooks();
-            foreach (var indice in model)
-            {
+        //public IActionResult Index()
+        //{
+        //    var model = _bookService.GetBooks();
+        //    foreach (var indice in model)
+        //    {
 
-            }
-            return View(model);
-        }
+        //    }
+        //    return View(model);
+        //}
     }
 }
